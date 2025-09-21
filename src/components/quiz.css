@@ -1,0 +1,146 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f5f9;
+}
+
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+
+.quiz-card {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 650px;
+  max-width: 100%;
+}
+
+.quiz-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.counter,
+.timer {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+
+.question {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+
+.option-btn {
+  padding: 10px 14px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.option-btn:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.option-btn.selected {
+  background: #bfdbfe;
+  border-color: #2563eb;
+  font-weight: 500;
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.next-box {
+  margin-top: 15px;
+  text-align: right;
+}
+
+
+.results {
+  text-align: center;
+}
+
+.results h2 {
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+
+.review {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.review-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.review-item strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.correct {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.incorrect {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Start box */
+.start-box {
+  text-align: center;
+  padding: 20px;
+}
